@@ -1,0 +1,11 @@
+.CatalogueProduits__titre {
+  margin-left: var(--rythme-espace);
+}
+
+.CatalogueProduits__produits {
+  margin: var(--rythme-base) var(--rythme-espace);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--rythme-espace);
+}

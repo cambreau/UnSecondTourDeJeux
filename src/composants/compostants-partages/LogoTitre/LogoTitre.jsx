@@ -1,6 +1,6 @@
 // CSS
 import "./LogoTitre.css";
-// Impor image
+// Import image
 import logo from "@assets/logo/logo.svg";
 
 function LogoTitre() {

@@ -1,0 +1,19 @@
+/* Regles CSS du composant BanniereCatalogue */
+
+/* Conteneur des elements de la banniere*/
+.BanniereCatalogue {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--rythme-espace);
+}
+
+/** ---- Images  */
+.BanniereCatalogue__picture {
+  display: block;
+}
+.BanniereCatalogue__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

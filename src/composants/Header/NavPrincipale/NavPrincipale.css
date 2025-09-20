@@ -14,7 +14,7 @@
 
 .NavPrincipale__item__lien {
   text-transform: uppercase;
-  color: var(--couleur-secondaire);
+  color: var(--couleur-texte);
   font-weight: var(--epaisseur-police-gras);
   padding: var(--rythme-serre) var(--rythme-base);
   border: solid 1px var(--couleur-fond-accent);
