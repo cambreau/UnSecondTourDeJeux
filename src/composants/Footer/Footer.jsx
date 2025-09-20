@@ -1,7 +1,15 @@
+// CSS
+import "./Footer.css";
+// Composants
+import LogoTitre from "../compostants-partages/LogoTitre/LogoTitre";
+
 function Footer() {
   return (
     <footer>
-      <p>Tous droits réservés - Un second tour de jeux 2025</p>
+      <LogoTitre />
+      <p className="Footer__droits">
+        Tous droits réservés - Un second tour de jeux 2025
+      </p>
     </footer>
   );
 }

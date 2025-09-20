@@ -1,11 +1,13 @@
-/* Regles CSS du composant Header */
+/* Regles CSS du composant Footer */
 
-.Header {
+footer {
   background-color: var(--couleur-fond-accent);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: var(--rythme-base);
-  border-bottom: solid 0.5px var(--couleur-bordure);
-  box-shadow: var(--box-shadow);
+}
+
+.Footer__droits {
+  text-align: center;
 }

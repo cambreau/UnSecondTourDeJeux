@@ -1,0 +1,29 @@
+/* Regles CSS du composant NavPrincipale */
+
+/* Conteneur nav */
+.NavPrincipale {
+  margin-top: var(--rythme-serre);
+}
+
+/** ---- Conteneur ul des items  */
+.NavPrincipale__items {
+  display: flex;
+  flex-direction: row;
+  gap: var(--rythme-base);
+}
+
+.NavPrincipale__item__lien {
+  text-transform: uppercase;
+  color: var(--couleur-secondaire);
+  font-weight: var(--epaisseur-police-gras);
+  padding: var(--rythme-serre) var(--rythme-base);
+  border: solid 1px var(--couleur-fond-accent);
+}
+
+.NavPrincipale__item__lien:hover {
+  color: var(--couleur-principale);
+  border: solid 1px var(--couleur-bordure);
+  border-radius: var(--arrondi-petit);
+  background-color: var(--couleur-fond);
+  transition: all 0.3s ease;
+}

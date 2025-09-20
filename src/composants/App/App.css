@@ -1,0 +1,28 @@
+/* Rétablir les marges intérieures & extérieures sur tout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--couleur-fond);
+  font-family: var(--police-general);
+  line-height: var(--interligne-base);
+  font-size: var(--taille-police-normal);
+  color: var(--couleur-texte);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: var(--couleur-secondaire);
+  font-family: var(--police-decorative);
+  font-size: var(--taille-police-grand);
+}

@@ -1,68 +1,44 @@
+/* Variables CSS */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* --- Espacement --- */
+  --rythme-tres-serre: 5px;
+  --rythme-serre: 10px;
+  --rythme-base: 20px;
+  --rythme-espace: 40px;
+  --rythme-tres-espace: 80px;
+  /* --- Couleurs --- */
+  --couleur-fond-accent: #faecef;
+  --couleur-fond: #fffefe;
+  --couleur-texte: #4f6376;
+  --couleur-principale: #e04965;
+  --couleur-secondaire: #9e6c72;
+  --couleur-bordure: #d5c1b1;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  /* --- Interligne --- */
+  --interligne-base: 1.5625em;
+  --interligne-grand: 2.5rem;
+  --interligne-logo: 1.78em;
+  /* --- Police --- */
+  --police-general: "Lora", sans-serif;
+  --police-decorative: "Lora", italic;
+  /* --- Taille de police --- */
+  --taille-police-petit: 0.9rem;
+  --taille-police-normal: 1rem;
+  --taille-police-moyen: 1.5rem;
+  --taille-police-grand: 2rem;
+  --taille-police-gros: 2.3rem;
+  /* --- Epaisseur de police --- */
+  --epaisseur-police-normale: 400;
+  --epaisseur-police-gras: 550;
+  --epaisseur-police-tres-gras: 700;
+  /* Border-radius */
+  --arrondi-petit: 4px;
+  --arrondi-grand: 8px;
+  /* Box-shadow */
+  /* Moyennement doux */
+  --box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  /* Points de rupture (ne peuvent pas être utilisés comme variables, mais sont indiqués à titre informatif). */
+  /* --ecran-petit: 768px;
+       --ecran-moyen: 1170px;
+       --ecran-large: 1450px; */
 }

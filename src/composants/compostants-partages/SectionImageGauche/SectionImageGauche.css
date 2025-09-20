@@ -1,0 +1,44 @@
+/* Regles CSS du composant SectionImageGauche */
+
+/* Conteneur */
+.SectionImageGauche {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-content: center;
+  margin: var(--rythme-base) 0;
+}
+/** ---- Image */
+.SectionImageGauche__image {
+  display: block;
+  width: 100%;
+  height: 550px;
+}
+
+.SectionImageGauche__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/** ---- Boite  */
+.SectionImageGauche__boite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--rythme-espace);
+  background-color: var(--couleur-fond-accent);
+  padding: var(--rythme-espace);
+  margin: 0 var(--rythme-espace);
+  border: thick var(--couleur-bordure);
+  border-radius: var(--arrondi-grand);
+  text-align: center;
+}
+
+/* Taille d'ecran inferieur a 768px */
+@media screen and (max-width: 768px) {
+  .SectionImageGauche {
+    text-align: center;
+    justify-items: center;
+  }
+}
