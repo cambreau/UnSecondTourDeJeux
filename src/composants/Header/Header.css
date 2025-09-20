@@ -1,0 +1,38 @@
+header {
+  background-color: var(--primary);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 20px;
+}
+
+.titre-logo {
+  display: flex;
+  gap: 10px;
+}
+
+.titre-logo h1 {
+  font-family: var(--decorative-font);
+}
+
+.nav-principal {
+  justify-items: end;
+}
+.nav-principal ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-principal ul li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+}
