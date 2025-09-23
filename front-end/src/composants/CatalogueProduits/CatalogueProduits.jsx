@@ -30,18 +30,20 @@ function CatalogueProduits({ gestionPanierProduit, produits }) {
     <section>
       <BanniereCatalogue />
       <h2 className="CatalogueProduits__titre">Découvrez nos produits</h2>
-      <FiltresProduits
-        filtreActuel={filtreActuel}
-        setFiltreActuel={setFiltreActuel}
-      />
-      <div className="CatalogueProduits__produits">
-        {produitsFiltres.map((produitfiltre, index) => (
-          <CarteProduit
-            key={index}
-            produit={produitfiltre}
-            gestionPanierProduit={gestionPanierProduit}
-          />
-        ))}
+      <div class="CatalogueProduits__contenu">
+        <FiltresProduits
+          filtreActuel={filtreActuel}
+          setFiltreActuel={setFiltreActuel}
+        />
+        <div className="CatalogueProduits__produits">
+          {produitsFiltres.map((produitfiltre, index) => (
+            <CarteProduit
+              key={index}
+              produit={produitfiltre}
+              gestionPanierProduit={gestionPanierProduit}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

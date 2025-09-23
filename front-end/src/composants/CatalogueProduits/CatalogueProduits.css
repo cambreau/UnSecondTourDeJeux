@@ -1,5 +1,5 @@
 .CatalogueProduits__titre {
-  margin-left: var(--rythme-espace);
+  margin: var(--rythme-espace);
 }
 
 .CatalogueProduits__produits {
@@ -9,4 +9,14 @@
   flex-wrap: wrap;
   gap: var(--rythme-espace);
   justify-content: center;
+}
+
+/* Taille d'ecran inferieur a 1000x */
+@media screen and (max-width: 1000px) {
+  .CatalogueProduits__contenu {
+    display: flex;
+    flex-direction: row;
+    gap: var(--rythme-base);
+    justify-content: center;
+  }
 }

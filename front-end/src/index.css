@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap");
+
 /* Variables CSS */
 :root {
   /* --- Espacement --- */
@@ -7,12 +9,12 @@
   --rythme-espace: 40px;
   --rythme-tres-espace: 80px;
   /* --- Couleurs --- */
-  --couleur-fond-accent: #faf2ec;
+  --couleur-fond-accent: #f7efeb;
   --couleur-fond: #fffefe;
   --couleur-texte: #4f6376;
-  --couleur-principale: #e04965;
-  --couleur-secondaire: #9e6c72;
-  --couleur-bordure: #d5c1b1;
+  --couleur-principale: #9e1a50;
+  --couleur-secondaire: #6c7b9e;
+  --couleur-bordure: #ceb7d0;
 
   /* --- Interligne --- */
   --interligne-base: 1.5625em;
@@ -20,7 +22,7 @@
   --interligne-logo: 1.78em;
   /* --- Police --- */
   --police-general: "Lora", sans-serif;
-  --police-decorative: "Lora", italic;
+  --police-decorative: "Playfair Display", sans-serif;
   /* --- Taille de police --- */
   --taille-police-petit: 0.9rem;
   --taille-police-normal: 1rem;
@@ -38,7 +40,7 @@
   /* Moyennement doux */
   --box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
   /* Points de rupture (ne peuvent pas être utilisés comme variables, mais sont indiqués à titre informatif). */
-  /* --ecran-petit: 768px;
-       --ecran-moyen: 1170px;
-       --ecran-large: 1450px; */
+  /* --ecran-petit: 700px;
+       --ecran-moyen: 1000px;
+       --ecran-large: 1230px; */
 }

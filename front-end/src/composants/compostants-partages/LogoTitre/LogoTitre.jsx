@@ -1,7 +1,7 @@
 // CSS
 import "./LogoTitre.css";
 // Import image
-import logo from "@assets/logo/logo.svg";
+import logo from "@assets/logo/carousal.png";
 
 function LogoTitre() {
   return (

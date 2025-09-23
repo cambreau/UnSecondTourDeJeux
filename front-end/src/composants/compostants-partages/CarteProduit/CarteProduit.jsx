@@ -18,9 +18,15 @@ function CarteProduit({ produit, gestionPanierProduit }) {
       </picture>
       <h3 className="CarteProduit__titre">{produit.nom}</h3>
       <div className="CarteProduit__description">
-        <p>Age : {produit.age}</p>
-        <p>Etat : {produit.etat}</p>
-        <p>Prix : {produit.prix}$</p>
+        <p>
+          <span>Age :</span> {produit.age}
+        </p>
+        <p>
+          <span>Etat :</span> {produit.etat}
+        </p>
+        <p>
+          <span>Prix :</span> {produit.prix}$
+        </p>
       </div>
       <BtnPanier
         produit={produit}

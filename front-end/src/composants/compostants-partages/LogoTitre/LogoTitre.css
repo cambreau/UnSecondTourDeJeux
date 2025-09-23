@@ -27,7 +27,14 @@
 /** ---- Titre  */
 .LogoTitre__titre {
   font-size: var(--taille-police-gros);
-  font-weight: var(--epaisseur-police-tres-gras);
+  font-weight: var(--epaisseur-police-gras);
   font-family: var(--police-decorative);
   color: var(--couleur-principale);
+}
+
+/* Taille d'ecran inferieur a 700px */
+@media screen and (max-width: 700px) {
+  .LogoTitre__titre {
+    font-size: var(--taille-police-moyen);
+  }
 }

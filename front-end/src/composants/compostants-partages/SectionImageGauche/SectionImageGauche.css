@@ -35,10 +35,11 @@
   text-align: center;
 }
 
-/* Taille d'ecran inferieur a 768px */
-@media screen and (max-width: 768px) {
+/* Taille d'ecran inferieur a 1230px */
+@media screen and (max-width: 1230px) {
   .SectionImageGauche {
-    text-align: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--rythme-base);
   }
 }

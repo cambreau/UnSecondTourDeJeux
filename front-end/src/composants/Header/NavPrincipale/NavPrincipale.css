@@ -13,7 +13,7 @@
 }
 
 .NavPrincipale a {
-  text-transform: uppercase;
+  font-family: var(--police-decorative);
   color: var(--couleur-texte);
   font-weight: var(--epaisseur-police-gras);
   padding: var(--rythme-serre) var(--rythme-base);
@@ -35,4 +35,12 @@
 .NavPrincipale a.active {
   color: var(--couleur-principale);
   text-decoration: underline;
+}
+
+/* Taille d'ecran inferieur a 700px */
+@media screen and (max-width: 700px) {
+  .NavPrincipale {
+    flex-direction: column;
+    gap: 0;
+  }
 }

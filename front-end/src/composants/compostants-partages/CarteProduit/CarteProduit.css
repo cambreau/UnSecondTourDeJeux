@@ -12,6 +12,7 @@
 
 .CarteProduit__titre {
   text-align: center;
+  color: var(--couleur-secondaire);
 }
 
 .CarteProduit__image {
@@ -29,4 +30,18 @@
 
 .CarteProduit:hover {
   box-shadow: var(--box-shadow);
+}
+
+.CarteProduit__description span {
+  font-weight: var(--epaisseur-police-gras);
+  color: var(--couleur-secondaire);
+}
+
+/* Taille d'ecran inferieur a 1000x */
+@media screen and (max-width: 1000px) {
+  .CarteProduit__image {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
 }

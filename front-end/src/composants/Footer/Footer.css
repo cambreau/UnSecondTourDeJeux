@@ -11,3 +11,20 @@ footer {
 .Footer__droits {
   text-align: center;
 }
+
+footer .LogoTitre {
+  margin-left: var(--rythme-espace);
+}
+
+footer .LogoTitre .LogoTitre__titre {
+  font-size: var(--taille-police-moyen);
+}
+
+/* Taille d'ecran inferieur a 1230x */
+@media screen and (max-width: 1230px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--rythme-base);
+  }
+}
