@@ -1,0 +1,38 @@
+/* Regles CSS du composant NavPrincipale */
+
+/* Conteneur nav */
+.NavPrincipale {
+  margin-top: var(--rythme-serre);
+  display: flex;
+  flex-direction: row;
+  gap: var(--rythme-base);
+  justify-content: end;
+}
+.NavPrincipale {
+  align-items: center;
+}
+
+.NavPrincipale a {
+  text-transform: uppercase;
+  color: var(--couleur-texte);
+  font-weight: var(--epaisseur-police-gras);
+  padding: var(--rythme-serre) var(--rythme-base);
+  border: solid 1px var(--couleur-fond-accent);
+}
+
+.NavPrincipale a img {
+  width: 40px;
+}
+
+.NavPrincipale a:hover {
+  color: var(--couleur-principale);
+  border: solid 1px var(--couleur-bordure);
+  border-radius: var(--arrondi-petit);
+  background-color: var(--couleur-fond);
+  transition: all 0.3s ease;
+}
+
+.NavPrincipale a.active {
+  color: var(--couleur-principale);
+  text-decoration: underline;
+}

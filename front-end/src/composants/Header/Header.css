@@ -1,0 +1,11 @@
+/* Regles CSS du composant Header */
+
+.Header {
+  background-color: var(--couleur-fond-accent);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: var(--rythme-espace);
+  border-bottom: solid 0.5px var(--couleur-bordure);
+  box-shadow: var(--box-shadow);
+}
