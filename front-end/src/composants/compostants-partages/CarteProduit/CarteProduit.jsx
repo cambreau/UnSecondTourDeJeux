@@ -5,7 +5,7 @@ import { formatteStringSansAccentEtEspace } from "../../../utils/formatters";
 // Composants
 import BtnPanier from "./BtnPanier/BtnPanier";
 
-function CarteProduit({ produit, gestionPanierProduit }) {
+function CarteProduit({ produits, panier, produit, gestionPanierProduit }) {
   return (
     <section className="CarteProduit" data-id={produit.id}>
       <picture className="CarteProduit__image">
@@ -31,6 +31,8 @@ function CarteProduit({ produit, gestionPanierProduit }) {
       <BtnPanier
         produit={produit}
         gestionPanierProduit={gestionPanierProduit}
+        previousStateProduits={produits}
+        previousStatePanier={panier}
       />
     </section>
   );

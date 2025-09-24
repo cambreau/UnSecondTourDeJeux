@@ -13,29 +13,10 @@ import MonPanier from "../MonPanier/MonPanier";
 import { recupererProduits } from "../../utils/requetes";
 
 function App() {
-  // --------------------------- useState Panier
-  let [panier, setPanier] = useState(() => {
-    try {
-      const panierStocke = localStorage.getItem("panier");
-      return panierStocke ? JSON.parse(panierStocke) : [];
-    } catch {
-      return [];
-    }
-  });
-
-  // Mise a jour dans localStorage à chaque changement -> Utiliser directement, pas besoin de l'appeler.
-  useEffect(() => {
-    localStorage.setItem("panier", JSON.stringify(panier));
-  }, [panier]);
-
   // --------------------------- useState Produits
   let [produits, setProduits] = useState([]);
   // useEffect ne peux pas recevoir en parametre une fonction async
-  // useEffect(async () => {
-  //   const repProduit = await recupererProduits();
-  //   setProduits(repProduit);
-  // }, []); Cette methode n'est pas autorisee.
-  // Cette fonction recharge automatiquement la liste des produits depuis une API chaque fois que la valeur de filtreActuel change.
+  // Récupérer les produits à l'initialisation de la page :
   useEffect(() => {
     const chargerProduits = async () => {
       const repProduit = await recupererProduits();
@@ -48,23 +29,41 @@ function App() {
     chargerProduits();
   }, []);
 
+  // --------------------------- useState Panier
+  // Au lancement de la page : Initialisation du panier vide.
+  let [panier, setPanier] = useState([]);
+
+  // Mise a jour dans localStorage à chaque changement -> Utiliser directement, pas besoin de l'appeler.
+  // ** Mettre a jour
+  useEffect(() => {
+    localStorage.setItem("panier", JSON.stringify(panier));
+    const panierStocke = localStorage.getItem("panier");
+    setPanier(JSON.parse(panierStocke));
+  }, [produits]);
+
   /**
    * Fonction qui ajoute un produit au panier.
    * @param {Object} produit
    */
-  const gestionPanierProduit = (produit) => {
+  const gestionPanierProduit = (
+    produit,
+    previousStateProduits,
+    previousStatePanier
+  ) => {
+    console.log(previousStateProduits);
     // toggle statut dans la liste
-    setProduits((prev) =>
-      prev.map((p) => (p.id === produit.id ? { ...p, statut: !p.statut } : p))
-    );
+    const i = previousStateProduits.findIndex((p) => p.id === produit.id);
+    let newStateProduits = [...previousStateProduits];
+    newStateProduits[i].statut = !newStateProduits[i].statut;
+    setProduits(newStateProduits);
+    console.log(newStateProduits);
 
     // ajouter/retirer du panier
-    setPanier((prev) => {
-      const existe = prev.some((i) => i.id === produit.id);
-      return existe
-        ? prev.filter((i) => i.id !== produit.id) // retirer
-        : [...prev, { ...produit, quantite: 1 }]; // ajouter
-    });
+    const existe = previousStatePanier.some((i) => i.id === produit.id);
+    let newStatePanier = existe
+      ? previousStatePanier.filter((i) => i.id !== produit.id) // retirer
+      : [...previousStatePanier, { ...produit, quantite: 1 }]; // ajouter
+    setPanier(newStatePanier);
   };
 
   return (
@@ -78,6 +77,7 @@ function App() {
             <CatalogueProduits
               gestionPanierProduit={gestionPanierProduit}
               produits={produits}
+              panier={panier}
             />
           }
         ></Route>

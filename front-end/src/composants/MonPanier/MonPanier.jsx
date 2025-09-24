@@ -4,7 +4,7 @@ import "./MonPanier.css";
 //Composants
 import LignePanier from "./LignePanier/LignePanier";
 
-function MonPanier({ panier, gestionPanierProduit }) {
+function MonPanier({ panier, gestionPanierProduit, produits }) {
   return (
     <section className="MonPanier">
       <h2 className="MonPanier__titre">Mon Panier</h2>
@@ -13,6 +13,8 @@ function MonPanier({ panier, gestionPanierProduit }) {
           <LignePanier
             produit={produit}
             gestionPanierProduit={gestionPanierProduit}
+            panier={panier}
+            produits={produits}
           />
         ))}
       </div>

@@ -5,12 +5,21 @@ import "./BtnPanier.css";
 import logoPanier from "@assets/images/ajout-panier-logo.svg";
 import poubellePanier from "@assets/images/poubelle.svg";
 
-function BtnPanier({ produit, gestionPanierProduit }) {
+function BtnPanier({
+  produit,
+  gestionPanierProduit,
+  previousStateProduits,
+  previousStatePanier,
+}) {
   return (
     <button
       className="BtnPanier"
       onClick={() => {
-        gestionPanierProduit(produit);
+        gestionPanierProduit(
+          produit,
+          previousStateProduits,
+          previousStatePanier
+        );
       }}
     >
       <img

@@ -7,7 +7,7 @@ import BanniereCatalogue from "./BanniereCatalogue/BanniereCatalogue";
 import FiltresProduits from "./FiltresProduits/FiltresProduits";
 import CarteProduit from "../compostants-partages/CarteProduit/CarteProduit";
 
-function CatalogueProduits({ gestionPanierProduit, produits }) {
+function CatalogueProduits({ gestionPanierProduit, produits, panier }) {
   // --------------------------- useStateFiltre
   let [filtreActuel, setFiltreActuel] = useState("tous");
 
@@ -30,7 +30,7 @@ function CatalogueProduits({ gestionPanierProduit, produits }) {
     <section>
       <BanniereCatalogue />
       <h2 className="CatalogueProduits__titre">Découvrez nos produits</h2>
-      <div class="CatalogueProduits__contenu">
+      <div className="CatalogueProduits__contenu">
         <FiltresProduits
           filtreActuel={filtreActuel}
           setFiltreActuel={setFiltreActuel}
@@ -41,6 +41,8 @@ function CatalogueProduits({ gestionPanierProduit, produits }) {
               key={index}
               produit={produitfiltre}
               gestionPanierProduit={gestionPanierProduit}
+              produits={produits}
+              panier={panier}
             />
           ))}
         </div>

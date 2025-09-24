@@ -1,0 +1,6 @@
+.LignePanier {
+  display: flex;
+  flex-direction: row;
+  gap: var(--rythme-base);
+  justify-content: center;
+}
