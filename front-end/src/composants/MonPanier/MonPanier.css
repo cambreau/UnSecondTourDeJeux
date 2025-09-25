@@ -1,0 +1,15 @@
+.MonPanier {
+  display: flex;
+  flex-direction: column;
+  margin: var(--rythme-espace);
+  margin-bottom: var(--rythme-tres-espace);
+  position: relative;
+  flex-grow: 1;
+}
+
+.MonPanier__liste-produits {
+  margin-top: var(--rythme-base);
+  background-color: var(--couleur-fond-accent);
+  padding: var(--rythme-base);
+  border-radius: var(--arrondi-grand);
+}

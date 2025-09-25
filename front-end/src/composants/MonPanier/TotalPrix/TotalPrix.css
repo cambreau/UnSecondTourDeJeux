@@ -1,0 +1,17 @@
+.TotalPrix {
+  font-family: var(--police-decorative);
+  color: var(--couleur-principale);
+  font-weight: var(--epaisseur-police-tres-gras);
+  font-size: var(--taille-police-moyen);
+  justify-content: end;
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+}
+
+.TotalPrix__montant {
+  font-family: var(--police-decorative);
+  color: var(--couleur-secondaire);
+  font-weight: var(--epaisseur-police-tres-gras);
+  font-size: var(--taille-police-moyen);
+}

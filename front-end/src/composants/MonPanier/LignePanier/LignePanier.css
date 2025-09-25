@@ -1,6 +1,20 @@
 .LignePanier {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--rythme-base);
   justify-content: center;
+  align-items: center;
+  border-top: 0.5px solid var(--couleur-bordure);
+  border-bottom: 0.5px solid var(--couleur-bordure);
+  padding: var(--rythme-base) var(--rythme-serre);
+}
+
+.LignePanier .BtnPanier {
+  background-color: var(--couleur-fond-accent);
+  border: none;
+}
+
+.LignePanier__nom {
+  font-weight: var(--police-decorative);
+  color: var(--couleur-secondaire);
 }

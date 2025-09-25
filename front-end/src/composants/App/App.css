@@ -5,12 +5,24 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 html {
   background-color: var(--couleur-fond);
   font-family: var(--police-general);
   line-height: var(--interligne-base);
   font-size: var(--taille-police-normal);
   color: var(--couleur-texte);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
 li {
