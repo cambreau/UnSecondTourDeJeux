@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Accueil from "../Accueil/Accueil";
 import CatalogueProduits from "../CatalogueProduits/CatalogueProduits";
+import VendreProduit from `../VendreProduit/VendreProduit`
 import MonPanier from "../MonPanier/MonPanier";
 // Backend
 import { recupererProduits } from "../../utils/requetes";
@@ -92,6 +93,7 @@ function App() {
             />
           }
         ></Route>
+        <Route path="/vendre-produit" element={<VendreProduit />}></Route>
       </Routes>
       <Footer />
     </>

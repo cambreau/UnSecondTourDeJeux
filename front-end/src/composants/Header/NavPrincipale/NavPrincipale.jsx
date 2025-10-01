@@ -11,6 +11,7 @@ function NavPrincipale() {
       <NavLink to={"/"}>Accueil</NavLink>
       <NavLink to={"/catalogue-produits"}>Catalogue Produits</NavLink>
       <NavLink to={"/contact"}>Nous contacter</NavLink>
+      <NavLink to={"/vendre-produit"}>Vendre un produit</NavLink>
       <NavLink to={"/mon-panier"}>
         <img src={panier} alt="Icon panier"></img>
       </NavLink>

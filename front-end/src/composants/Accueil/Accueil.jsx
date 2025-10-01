@@ -19,7 +19,7 @@ function Accueil() {
       descriptionImage="Image d'une chambre d'enfant"
       texteBtn="Alors n'hésitez plus, découvrez notre catalogue"
       lienBtn="/catalogue-produits"
-      classBtn="BoutonLien__classique"
+      classBtn="Bouton__classique"
     />
   );
 }

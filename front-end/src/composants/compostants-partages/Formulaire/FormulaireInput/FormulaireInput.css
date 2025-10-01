@@ -1,0 +1,15 @@
+/* Regles CSS du composant FormulaireInput */
+
+.FormulaireInput label {
+  font-weight: var(--epaisseur-police-gras);
+  font-size: var(--taille-police-moyen);
+}
+
+.FormulaireInput input {
+  padding: var(--rythme-serre);
+  font-size: var(--taille-police-normal);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: var(--arrondi-petit);
+  background-color: var(--couleur-fond);
+  width: 100%;
+}

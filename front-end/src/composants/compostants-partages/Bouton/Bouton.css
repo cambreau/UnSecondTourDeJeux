@@ -1,19 +1,20 @@
-/* Regles CSS du composant BoutonLien */
+/* Regles CSS du composant Bouton */
 
-.BoutonLien__classique {
-  padding: var(--rythme-base);
+.Bouton__classique {
+  padding: var(--rythme-serre) var(--rythme-base);
   background-color: var(--couleur-secondaire);
   font-family: var(---police-decorative);
   font-size: var(--taille-police-normal);
-  border-radius: var(--arrondi-grand);
+  border-radius: 999px;
   font-family: var(---police-decorative);
   font-weight: var(--epaisseur-police-gras);
   border: 3px solid var(--couleur-secondaire);
   color: var(--couleur-fond-accent);
 }
 
-.BoutonLien__classique:hover {
-  background-color: var(--couleur-fond);
-  color: var(--couleur-secondaire);
+.Bouton__classique:hover {
+  background-color: var(--couleur-secondaire-hover);
+  color: var(--couleur-texte);
   transition: all 0.3s ease;
+  border: 3px solid var(--couleur-secondaire-hover);
 }

@@ -2,7 +2,7 @@
 import "./SectionImageGauche.css";
 
 //Composants
-import BoutonLien from "../BoutonLien/BoutonLien";
+import Bouton from "../Bouton/Bouton";
 
 function SectionImageGauche({
   titre,
@@ -28,7 +28,7 @@ function SectionImageGauche({
         {sousTitre && <p className="texte-accentuation">{sousTitre}</p>}
         {description && <p>{description}</p>}
         {texteBtn && (
-          <BoutonLien texte={texteBtn} className={classBtn} lien={lienBtn} />
+          <Bouton texte={texteBtn} className={classBtn} lien={lienBtn} />
         )}
       </div>
     </section>

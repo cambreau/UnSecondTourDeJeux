@@ -1,0 +1,10 @@
+/* Regles CSS du composant Formulaire */
+
+.formulaire {
+  max-width: 600px;
+  margin: var(--rythme-espace) auto;
+  padding: var(--rythme-espace);
+  background-color: var(--couleur-fond-accent);
+  border-radius: var(--arrondi-grand);
+  box-shadow: var(--box-shadow);
+}
