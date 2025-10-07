@@ -4,6 +4,7 @@ import "./Accueil.css";
 import SectionImageGauche from "../compostants-partages/SectionImageGauche/SectionImageGauche";
 // Images
 import imageFond from "@assets/images/image-accueil1.jpg";
+import Bouton from "../compostants-partages/Bouton/Bouton";
 
 function Accueil() {
   return (

@@ -2,8 +2,8 @@
   {
     "id": 1,
     "nom": "Tour équilibre",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 40,
     "categorie": "jouet",
     "description": "Un jeu pour aider les tout-petits à développer leur motricité."
@@ -11,36 +11,36 @@
   {
     "id": 2,
     "nom": "Jeu dentaire",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 10,
     "categorie": "jouet",
     "description": "Anneaux de dentition souples pour soulager les poussées dentaires."
   },
   {
-    "id": 3,
-    "nom": "Bac à sable",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
-    "prix": "60",
-    "categorie": "jouet",
-    "description": "Bac à sable compact idéal pour une utilisation en extérieur.",
-    "dateMiseAJour": "2025-07-10T19:34:26.931Z"
-  },
-  {
     "id": 4,
     "nom": "Lot de 3 bavoirs",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 10,
     "categorie": "vetement",
     "description": "Bavoirs en coton doux, faciles à laver, avec motifs mignons."
   },
   {
+    "id": 3,
+    "nom": "Bac à sable",
+    "age": "+-10-ans",
+    "etat": "bon-etat",
+    "prix": "21",
+    "categorie": "jouet",
+    "description": "Bac à sable compact idéal pour une utilisation en extérieur.",
+    "dateMiseAJour": "2025-10-07T18:59:23.153Z"
+  },
+  {
     "id": 5,
     "nom": "Machine à café",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 20,
     "categorie": "jouet",
     "description": "Jouet d’imitation pour faire semblant de préparer le café comme les grands."
@@ -48,8 +48,8 @@
   {
     "id": 6,
     "nom": "Livre Au lit",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 10,
     "categorie": "livre",
     "description": "Livre illustré pour accompagner le rituel du coucher."
@@ -57,8 +57,8 @@
   {
     "id": 7,
     "nom": "Livre musical",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 10,
     "categorie": "livre",
     "description": "Livre sonore avec musiques douces pour éveiller les bébés."
@@ -66,8 +66,8 @@
   {
     "id": 8,
     "nom": "Set de couverts",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 20,
     "categorie": "mobilier",
     "description": "Set d’apprentissage en plastique pour apprendre à manger seul."
@@ -75,8 +75,8 @@
   {
     "id": 9,
     "nom": "Ourson thérapeutique",
-    "age": "0 - 2 ans",
-    "etat": "Bon état",
+    "age": "0---2-ans",
+    "etat": "bon-etat",
     "prix": 30,
     "categorie": "jouet",
     "description": "Peluche apaisante conçue pour calmer les enfants grâce à sa texture douce."

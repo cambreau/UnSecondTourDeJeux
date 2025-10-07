@@ -32,6 +32,10 @@
   box-shadow: var(--box-shadow);
 }
 
+.CarteProduit:hover .BtnModifSuppr {
+  display: flex;
+}
+
 .CarteProduit__description span {
   font-weight: var(--epaisseur-police-gras);
   color: var(--couleur-secondaire);

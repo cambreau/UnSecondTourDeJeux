@@ -1,0 +1,18 @@
+/* Regles CSS du composant FormulaireTextarea */
+
+.FormulaireTextarea {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rythme-tres-serre);
+  padding-top: var(--rythme-serre);
+  padding-bottom: var(--rythme-serre);
+  border-top: var(--couleur-bordure) 1px solid;
+  border-bottom: var(--couleur-bordure) 1px solid;
+}
+
+.FormulaireTextarea textarea {
+  width: 100%;
+  padding: var(--rythme-tres-serre);
+  border: 1px solid var(--couleur-secondaire);
+  border-radius: var(--arrondi-petit);
+}

@@ -28,7 +28,12 @@ function SectionImageGauche({
         {sousTitre && <p className="texte-accentuation">{sousTitre}</p>}
         {description && <p>{description}</p>}
         {texteBtn && (
-          <Bouton texte={texteBtn} className={classBtn} lien={lienBtn} />
+          <Bouton
+            texte={texteBtn}
+            className={classBtn}
+            type="lien"
+            lienAction={lienBtn}
+          />
         )}
       </div>
     </section>

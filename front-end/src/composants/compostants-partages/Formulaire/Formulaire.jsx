@@ -1,11 +1,20 @@
 // CSS
 import "./Formulaire.css";
 
-function Formulaire(titreFormulaire, method, action = null) {
+function Formulaire({
+  titreFormulaire,
+  method,
+  action = null,
+  enfants,
+  bouton,
+}) {
   return (
-    <section>
-      <h2>{titreFormulaire}</h2>
-      <form method={method} action={action} className="formulaire"></form>
+    <section className="Formulaire">
+      <h2 className="Formulaire-titre">{titreFormulaire}</h2>
+      <form method={method} action={action}>
+        {enfants}
+        {bouton}
+      </form>
     </section>
   );
 }

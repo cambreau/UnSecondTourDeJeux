@@ -4,6 +4,7 @@ import "./CarteProduit.css";
 import { formatteStringSansAccentEtEspace } from "../../../utils/formatters";
 // Composants
 import BtnPanier from "./BtnPanier/BtnPanier";
+import BtnModifSuppr from "./BtnModifSuppr/BtnModifSuppr";
 
 function CarteProduit({ produits, panier, produit, gestionPanierProduit }) {
   return (
@@ -34,6 +35,7 @@ function CarteProduit({ produits, panier, produit, gestionPanierProduit }) {
         previousStateProduits={produits}
         previousStatePanier={panier}
       />
+      <BtnModifSuppr produit={produit} />
     </section>
   );
 }

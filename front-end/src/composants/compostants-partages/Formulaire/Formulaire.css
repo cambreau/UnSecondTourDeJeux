@@ -1,10 +1,41 @@
 /* Regles CSS du composant Formulaire */
 
-.formulaire {
-  max-width: 600px;
+.Formulaire {
   margin: var(--rythme-espace) auto;
   padding: var(--rythme-espace);
   background-color: var(--couleur-fond-accent);
   border-radius: var(--arrondi-grand);
   box-shadow: var(--box-shadow);
+}
+
+.Formulaire-titre {
+  margin-bottom: var(--rythme-espace);
+  text-align: center;
+}
+
+.Formulaire form label {
+  width: 110px;
+  padding: var(--rythme-tres-serre);
+  font-family: var(--police-decorative);
+  font-weight: var(--epaisseur-police-tres-gras);
+  color: var(--couleur-principale);
+}
+
+.Formulaire form input,
+.Formulaire form select {
+  width: 300px;
+  padding: var(--rythme-tres-serre);
+  border: 1px solid var(--couleur-secondaire);
+  border-radius: var(--arrondi-petit);
+}
+
+.Formulaire input:focus,
+.Formulaire select:focus,
+.Formulaire textarea:focus {
+  outline: none;
+  border: 2px solid var(--couleur-secondaire);
+}
+
+.Formulaire .Bouton {
+  margin-top: var(--rythme-serre);
 }

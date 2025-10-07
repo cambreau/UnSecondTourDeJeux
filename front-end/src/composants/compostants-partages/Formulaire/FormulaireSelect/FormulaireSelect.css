@@ -1,6 +1,6 @@
-/* Regles CSS du composant FormulaireInput */
+/* Regles CSS du composant FormulaireSelect */
 
-.FormulaireInput {
+.FormulaireSelect {
   display: flex;
   flex-wrap: wrap;
   gap: var(--rythme-base);

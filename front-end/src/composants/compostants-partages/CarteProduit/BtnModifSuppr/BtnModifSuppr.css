@@ -1,0 +1,28 @@
+/* Regles CSS du composant BtnModifSuppr */
+
+.BtnModifSuppr {
+  display: none;
+  gap: var(--rythme-serre);
+  background-color: var(--couleur-fond);
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid var(--couleur-secondaire);
+  border-radius: 0 0 0 var(--arrondi-petit);
+}
+
+.BtnModifSuppr__btn {
+  display: block;
+  width: 45px;
+  background-color: var(--couleur-fond);
+  border: none;
+}
+.BtnModifSuppr__btn img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.BtnModifSuppr__btn:hover {
+  background-color: var(--couleur-secondaire-hover);
+}
